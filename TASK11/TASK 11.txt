@@ -1,0 +1,23 @@
+Step 1: Dataset and Group Identification
+We used an e‑commerce dataset (customer_journey.csv) sourced from Kaggle. The dataset contained referral sources, purchase behavior, time on page, and cart activity. We defined Control group as users from Email/Google/Direct channels and Test group as users from Social Media referrals.
+Step 2: Hypothesis Setup and Statistical Test Choice
+We set up the null hypothesis (H0: no difference between groups) and alternative hypothesis (H1: difference exists). For conversion rate (binary outcome), we chose a two‑proportion z‑test/chi‑square test. For continuous metrics like time on page and items in cart, we selected independent t‑tests.
+Step 3: Calculate Group Metrics
+We computed mean values for each group. Control users averaged ~96.6 seconds on page, 1.14 items in cart, and a 40.1% conversion rate. Test users averaged ~99.9 seconds on page, 1.13 items in cart, and a 38.4% conversion rate. This showed Social Media users were more engaged but converted slightly less.
+Step 4: Run Statistical Tests
+We applied t‑tests for continuous metrics and chi‑square for conversion. Results showed:
+- Time on Page: significant difference (p ≈ 0.0012).
+- Items in Cart: no difference (p ≈ 0.91).
+- Conversion: no significant difference (p ≈ 0.082).
+Step 5: Extract P‑Values
+We extracted p‑values for clarity: TimeOnPage (0.0012), ItemsInCart (0.9075), Conversion (0.0818). These values were compared against α = 0.05 to determine statistical significance.
+Step 6: Interpret Results
+Time on Page difference was statistically significant, confirming Social Media users spend longer on site. Items in Cart showed no difference, meaning shopping intent is similar. Conversion difference was not significant, so Control’s higher conversion rate cannot be considered proven.
+Step 7: Confidence Interval Analysis
+We calculated the 95% confidence interval for conversion difference: (–0.19%, +3.75%). Since the interval includes zero, the true difference could favor either group. This reinforces that conversion differences are not statistically reliable.
+Step 8: Visualize Group Distributions
+We plotted histograms and bar charts to visualize group behavior. Time on Page distributions showed Test users skewed toward longer sessions. Items in Cart distributions overlapped heavily. Conversion bar charts showed Control slightly higher, but visually consistent with the non‑significant statistical result.
+
+Step 9: Final Decision and Business Recommendation
+The A/B test shows Social Media users are more engaged (longer time on page) but this does not translate into higher conversions. Cart behavior is identical, and conversion differences are not statistically significant.
+Recommendation: Focus on optimizing the Social Media funnel to convert engaged visitors into buyers. This could involve clearer CTAs, streamlined checkout, or targeted offers. Meanwhile, maintain existing strategies for Control channels since they already convert efficiently
