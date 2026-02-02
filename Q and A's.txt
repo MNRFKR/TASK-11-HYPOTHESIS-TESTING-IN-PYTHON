@@ -1,0 +1,10 @@
+Q1: What is p-value?
+A p-value measures the probability that the observed difference happened by chance if the null hypothesis is true. A small p-value (below 0.05) suggests the result is statistically significant and unlikely due to random variation.
+Q2: Statistical vs business significance?
+Statistical significance means the result is mathematically proven not to be random. Business significance asks if the difference is practically useful—for example, a 0.5% lift may be statistically real but too small to impact revenue meaningfully.
+Q3: When to use chi-square?
+Chi-square is used when comparing categorical data like success/failure, yes/no, or purchase vs no purchase. It tests whether proportions differ between groups rather than comparing averages.
+Q4: What is confidence interval?
+A confidence interval gives a range of values within which the true difference likely lies. For example, a 95% CI means we are 95% confident the real effect falls inside that range, showing both direction and uncertainty.
+Q5: What is Type I error?
+A Type I error happens when we reject the null hypothesis even though it is actually true. In practice, it means claiming a difference exists when it doesn’t—also called a “false positive.”
